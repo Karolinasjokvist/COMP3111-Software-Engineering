@@ -4,11 +4,14 @@
 package lab1;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    public boolean someLibraryMethod() {
+        return true;
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        App lib = new App();
+        if(lib.someLibraryMethod()){
+            System.out.println("Hello world");
+        }
     }
 }
